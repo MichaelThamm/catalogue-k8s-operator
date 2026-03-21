@@ -8,12 +8,12 @@ variable "app_name" {
 variable "channel" {
   description = "Channel that the charm is deployed from"
   type        = string
-  default     = "dev/edge"
+  default     = "3/stable"
 
   validation {
     # the TF Juju provider correctly identifies invalid risks; no need to validate it
-    condition     = startswith(var.channel, "dev/")
-    error_message = "The track of the channel must be 'dev/'. e.g. 'dev/edge'."
+    condition     = startswith(var.channel, "3/")
+    error_message = "The track of the channel must be '3/'. e.g. '3/stable'."
   }
 }
 

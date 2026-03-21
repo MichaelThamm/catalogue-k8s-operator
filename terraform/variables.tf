@@ -5,7 +5,6 @@ variable "app_name" {
   default     = "catalogue"
 }
 
-
 variable "channel" {
   description = "Channel that the charm is deployed from"
   type        = string

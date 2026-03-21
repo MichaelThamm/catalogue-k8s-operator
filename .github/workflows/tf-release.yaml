@@ -10,7 +10,7 @@ on:
       - "**/*.tf"
   push:
     branches:
-      - main
+      - track/2
     paths:
       - "terraform/VERSION"
 
